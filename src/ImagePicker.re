@@ -9,7 +9,7 @@ type image_t = {
 
 type image_library_opts = {
   .
-  "allowsEditing": Js.undefined(Js.boolean),
+  "allowsEditing": Js.undefined(bool),
   "aspect": Js.undefined((int, int)),
   "quality": Js.undefined(int),
   "mediaTypes": Js.undefined(media_t)
@@ -17,7 +17,7 @@ type image_library_opts = {
 
 type camera_opts = {
   .
-  "allowsEditing": Js.undefined(Js.boolean),
+  "allowsEditing": Js.undefined(bool),
   "aspect": Js.undefined((int, int)),
   "quality": Js.undefined(int)
 };
