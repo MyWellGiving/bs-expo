@@ -6,7 +6,7 @@ let make =
       ~start: option(array(float))=?,
       ~end_: option(array(float))=?,
       ~locations: option(array(float))=?,
-      ~style: option(BsReactNative.Style.t),
+      ~style: option(Rebolt.Style.t),
       children,
     ) =>
   ReasonReact.wrapJsForReason(

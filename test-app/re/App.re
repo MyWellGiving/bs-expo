@@ -1,4 +1,4 @@
-open BsReactNative;
+open Rebolt;
 
 /* let () = BsExpo.Constants.constants##manifest |> Js.log |> ignore; */
 /* BsExpo.Constants.constants##getWebViewUserAgentAsync() */

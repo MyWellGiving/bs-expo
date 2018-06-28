@@ -8,20 +8,26 @@
     "install-peers": "install-self-peers -- --ignore-scripts"
   },
   "license": "MIT",
-  "keywords": ["reason", "reasonml", "bucklescript", "react-native", "expo"],
+  "keywords": [
+    "reason",
+    "reasonml",
+    "bucklescript",
+    "react-native",
+    "expo"
+  ],
   "author": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fxfactorial/bs-expo.git"
+    "url": "https://github.com/mywellgiving/bs-expo.git"
   },
   "devDependencies": {
     "@team-griffin/install-self-peers": "^1.1.1",
     "bs-platform": "^2.2.2"
   },
   "peerDependencies": {
-    "bs-react-native": "^0.5.0",
-    "expo": "^25.0.0",
-    "react-native": "expo/react-native#sdk-25",
-    "reason-react": "^0.3.4"
+    "expo": "^27.0.0",
+    "react-native": "~0.55.2",
+    "reason-react": "^0.3.4",
+    "rebolt": "^0.1.0"
   }
 }

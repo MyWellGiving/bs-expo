@@ -51,13 +51,13 @@ until you have your app running.
 
 1.  Now you can build all your (so far nonexsisting) Reason in two modes:
 
-    * `yarn run build` performs a single build
-    * `yarn run watch` enters the watch mode
+    - `yarn run build` performs a single build
+    - `yarn run watch` enters the watch mode
 
 1.  Now we come to the fun stuff! Create a new file `re/app.re` and make it look like this:
 
     ```reason
-    open BsReactNative;
+    open Rebolt;
 
     let app = () =>
       <View style=Style.(style([flex(1.), justifyContent(Center), alignItems(Center)]))>
@@ -70,7 +70,7 @@ until you have your app running.
 1.  We are nearly done! We now have to adapt `App.js`
 
     ```js
-    import { app } from "./lib/js/re/app.js";
+    import {app} from './lib/js/re/app.js';
     export default app;
     ```
 
@@ -89,7 +89,7 @@ You will probably need to [load custom fonts](https://docs.expo.io/versions/late
 
 ```reason
 let fontsPromise = BsExpo.Font.loadAll([
-  ("MyFont",  BsReactNative.Packager.require("path/to/MyFont.ttf")),
-  ("MyOtherFont", BsReactNative.Packager.require("path/to/MyOtherFont.otf")),
+  ("MyFont",  Rebolt.Packager.require("path/to/MyFont.ttf")),
+  ("MyOtherFont", Rebolt.Packager.require("path/to/MyOtherFont.otf")),
 ]);
 ```
